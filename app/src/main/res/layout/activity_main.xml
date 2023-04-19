@@ -4,8 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="500dp"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_panel"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/leprechaun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/leprechaun" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="-30dp"
+        app:cardBackgroundColor="@android:color/holo_green_dark"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="12dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rainbow goldstation"
+        android:textColor="@android:color/holo_green_dark"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
