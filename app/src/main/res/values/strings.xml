@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Rainbow gold station</string>
+    <string name="rainbow_goldstation">Rainbow goldstation</string>
+    <string name="join_the_club">Join the club</string>
 </resources>

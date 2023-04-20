@@ -5,28 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/text_rainbow_goldstation_layout_marginBottom_40"
-        android:fontFamily="@font/ibmplex_mono_bold"
-        android:text="@string/rainbow_goldstation"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="@dimen/text_rainbow_goldstation_textSize_36"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_panel"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/leprechaun"
-        android:layout_width="@dimen/leprechaun_textSize_layout_width_280"
-        android:layout_height="@dimen/leprechaun_textSize_layout_height_500"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_panel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/leprechaun" />
-
+    tools:context=".MainActivity2">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/bottom_panel"
@@ -40,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/button_start_club"
+            android:id="@+id/button_start"
             android:layout_width="@dimen/button_start_club_layout_width"
             android:layout_height="@dimen/button_start_club_layout_height"
             android:layout_gravity="center"
@@ -54,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/inter_extra_bold"
-                android:text="@string/join_the_club"
+                android:text="Start"
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="@dimen/button_start_club_textSize" />
 
