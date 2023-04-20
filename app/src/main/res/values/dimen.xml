@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_rainbow_goldstation_layout_marginBottom_40">40dp</dimen>
+    <dimen name="text_rainbow_goldstation_textSize_36">36sp</dimen>
+
+    <dimen name="leprechaun_textSize_layout_width_280">280dp</dimen>
+    <dimen name="leprechaun_textSize_layout_height_500">500dp</dimen>
+
+    <dimen name="bottom_panel_layout_height_180">180dp</dimen>
+    <dimen name="bottom_panel_layout_marginBottom">-30dp</dimen>
+    <dimen name="bottom_panel_cardCornerRadius_30">30dp</dimen>
+
+    <dimen name="button_start_club_layout_width">280dp</dimen>
+    <dimen name="button_start_club_layout_height">70dp</dimen>
+    <dimen name="button_start_club_cardCornerRadius">12dp</dimen>
+
+    <dimen name="button_start_club_textSize">36sp</dimen>
+</resources>
