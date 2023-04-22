@@ -50,6 +50,7 @@
             android:layout_height="@dimen/button_start_club_layout_height"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
+            android:stateListAnimator="@animator/press_button_animation"
             android:clickable="true"
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="@dimen/button_start_club_cardCornerRadius">
