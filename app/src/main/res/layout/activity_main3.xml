@@ -5,44 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity2">
-
-    <TextView
-        android:id="@+id/text_battles_station"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/ibmplexmono_regular"
-        android:text="@string/your_battlestattion_is"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="@dimen/text_rainbow_goldstation_textSize_36"
-        app:layout_constraintBottom_toTopOf="@id/number_pc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/number_pc"
-        android:layout_width="@dimen/button_start_club_layout_width"
-        android:layout_height="@dimen/button_start_club_layout_height"
-        app:cardBackgroundColor="@android:color/holo_green_dark"
-        app:cardCornerRadius="@dimen/button_start_club_cardCornerRadius"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_panel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_battles_station">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/inter_extra_bold"
-            android:text="number"
-            android:textColor="@color/black"
-            android:textSize="@dimen/button_start_club_textSize" />
-
-    </androidx.cardview.widget.CardView>
+    tools:context=".MainActivity3">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/bottom_panel"
@@ -55,6 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+
         <androidx.cardview.widget.CardView
             android:id="@+id/button_start"
             android:layout_width="@dimen/button_start_club_layout_width"
@@ -63,7 +27,6 @@
             android:layout_marginBottom="10dp"
             android:clickable="true"
             android:stateListAnimator="@animator/press_button_animation"
-
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="@dimen/button_start_club_cardCornerRadius">
 
@@ -72,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/inter_extra_bold"
-                android:text="Start"
+                android:text="Stop"
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="@dimen/button_start_club_textSize" />
 
@@ -80,16 +43,18 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageView_back"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/image_deck"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@id/bottom_panel"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_circle_24"
+        app:srcCompat="@drawable/deck"
 
         />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
