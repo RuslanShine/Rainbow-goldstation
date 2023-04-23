@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import com.example.rainbowgoldstation.databinding.ActivityMain2Binding
+import java.util.Random
 import java.util.concurrent.Executors
 
 class MainActivity2 : AppCompatActivity() {
@@ -25,6 +26,16 @@ class MainActivity2 : AppCompatActivity() {
         binding.imageViewBack.setOnClickListener(){
             binding.imageViewBack.startAnimation(myAnimation)
         }
+
+        val numberPC = listOf<String>("J321","F234","G846","Y754","W748","N743","L893","S933","M832","V834","A398","R546")
+        val rezutlRandom = numberPC.random()
+        binding.numberPcResult.text = rezutlRandom
+
+
+
+
+
+
 
 
 

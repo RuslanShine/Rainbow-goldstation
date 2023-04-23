@@ -42,6 +42,7 @@
         </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>
 
+
     <ImageView
         android:id="@+id/image_deck"
         android:layout_width="0dp"
@@ -56,5 +57,18 @@
         app:srcCompat="@drawable/deck"
 
         />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/inter_extra_bold"
+        android:text="00:00:00"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="@dimen/button_start_club_textSize"
+        app:layout_constraintBottom_toTopOf="@id/bottom_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
