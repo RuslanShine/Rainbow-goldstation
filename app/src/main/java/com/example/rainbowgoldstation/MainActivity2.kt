@@ -1,13 +1,16 @@
 package com.example.rainbowgoldstation
 
+import android.animation.Animator
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.content.Intent
-import android.icu.util.TimeUnit
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.animation.AnimationUtils
+import androidx.appcompat.app.AppCompatActivity
 import com.example.rainbowgoldstation.databinding.ActivityMain2Binding
-import java.util.Random
-import java.util.concurrent.Executors
+import kotlinx.android.synthetic.main.activity_main2.*
+
 
 class MainActivity2 : AppCompatActivity() {
     lateinit var binding: ActivityMain2Binding
@@ -20,6 +23,7 @@ class MainActivity2 : AppCompatActivity() {
         binding.buttonStart.setOnClickListener(){
             intent = Intent(this@MainActivity2,MainActivity3::class.java)
             startActivity(intent)
+
         }
 
         val myAnimation = AnimationUtils.loadAnimation(this,R.anim.scale)
@@ -39,7 +43,14 @@ class MainActivity2 : AppCompatActivity() {
 
 
 
+
+
+
+
+
+
     }
+
 
 
 

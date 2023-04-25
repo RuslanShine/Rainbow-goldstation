@@ -5,43 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity3">
+    tools:context=".MainActivity4">
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/bottom_panel"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/bottom_panel_layout_height_180"
+        android:layout_height="480dp"
         android:layout_marginBottom="@dimen/bottom_panel_layout_marginBottom"
         app:cardBackgroundColor="@android:color/holo_green_dark"
         app:cardCornerRadius="@dimen/bottom_panel_cardCornerRadius_30"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="290dp"
+            android:layout_height="290dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="@dimen/button_start_club_cardCornerRadius" />
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/button_stop"
             android:layout_width="@dimen/button_start_club_layout_width"
             android:layout_height="@dimen/button_start_club_layout_height"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="360dp"
             android:clickable="true"
             android:stateListAnimator="@animator/press_button_animation"
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="@dimen/button_start_club_cardCornerRadius">
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/inter_extra_bold"
-                android:text="Stop"
+                android:hint="@string/code"
+                android:inputType="text"
                 android:textColor="@android:color/holo_green_dark"
-                android:textSize="@dimen/button_start_club_textSize" />
+                android:textColorHint="@android:color/holo_green_dark"
+                android:textSize="@dimen/button_start_club_textSize"
+                android:background="@color/black"
+                />
 
         </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>
-
 
     <ImageView
         android:id="@+id/image_deck"
@@ -50,38 +62,13 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:adjustViewBounds="true"
+        android:rotation="8"
         app:layout_constraintBottom_toTopOf="@id/bottom_panel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/deck"
 
-        />
+        app:srcCompat="@drawable/deck" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/timer"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginBottom="8dp"-->
-<!--        android:fontFamily="@font/inter_extra_bold"-->
-<!--        android:text="00:00:00"-->
-<!--        android:textColor="@android:color/holo_green_dark"-->
-<!--        android:textSize="@dimen/button_start_club_textSize"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/bottom_panel"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
-
-    <Chronometer
-        android:id="@+id/timer_go"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/inter_extra_bold"
-        android:text="00:00:00"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="@dimen/button_start_club_textSize"
-        app:layout_constraintBottom_toTopOf="@id/bottom_panel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
