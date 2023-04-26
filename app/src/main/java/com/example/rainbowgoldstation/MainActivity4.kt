@@ -1,8 +1,12 @@
 package com.example.rainbowgoldstation
 
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
+
+import androidx.appcompat.app.AppCompatActivity
+
 import com.example.rainbowgoldstation.databinding.ActivityMain4Binding
+
 
 class MainActivity4 : AppCompatActivity() {
     lateinit var binding: ActivityMain4Binding
@@ -13,5 +17,10 @@ class MainActivity4 : AppCompatActivity() {
 
 
 
+
+
+
     }
+
+
 }
