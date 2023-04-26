@@ -27,15 +27,14 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
             app:cardBackgroundColor="@color/black"
-            app:cardCornerRadius="@dimen/button_start_club_cardCornerRadius" >
+            app:cardCornerRadius="@dimen/button_start_club_cardCornerRadius">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/qr_code"
                 android:layout_margin="30dp"
-                />
+                app:srcCompat="@drawable/qr_code" />
         </androidx.cardview.widget.CardView>
 
 
@@ -54,14 +53,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:background="@color/black"
                 android:fontFamily="@font/inter_extra_bold"
                 android:hint="@string/code"
                 android:inputType="text"
                 android:textColor="@android:color/holo_green_dark"
                 android:textColorHint="@android:color/holo_green_dark"
-                android:textSize="@dimen/button_start_club_textSize"
-                android:background="@color/black"
-                />
+                android:textSize="@dimen/button_start_club_textSize" />
 
         </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>

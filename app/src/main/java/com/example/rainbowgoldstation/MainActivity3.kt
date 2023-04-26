@@ -31,15 +31,7 @@ class MainActivity3 : AppCompatActivity() {
         binding = ActivityMain3Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        binding.buttonStop.setOnClickListener{
-//            startStopTimer()
-//        }
-//        binding.buttonStop.setOnClickListener {  }
-//
-//
-//        serviceIntent = Intent(applicationContext, TimeService::class.java)
-//        registerReceiver(updateTime, IntentFilter(TimeService.TIMER_UPDATED))
-        intent = Intent(this@MainActivity3,MainActivity4::class.java)
+        intent = Intent(this@MainActivity3, MainActivity4::class.java)
 
         chronometer = findViewById(R.id.timer_go)
         chronometer.start()
@@ -48,61 +40,11 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val myAnimation = AnimationUtils.loadAnimation(this,R.anim.scale)
-        binding.imageViewBack.setOnClickListener(){
+        val myAnimation = AnimationUtils.loadAnimation(this, R.anim.scale)
+        binding.imageViewBack.setOnClickListener() {
             binding.imageViewBack.startAnimation(myAnimation)
         }
 
-
     }
-
-
-
-
-//    private fun resetTime() {
-//        stopTimer()
-//        time = 0.0
-//        binding.timer.text = getTimeStringFormatDouble(time)
-//    }
-//
-//    private fun startStopTimer() {
-//        if (timerStarted)
-//            stopTimer()
-//        else
-//            starTimer()
-//    }
-//
-//    private fun starTimer() {
-//        serviceIntent.putExtra(TimeService.TIMER_EXTRA, time)
-//        startService(serviceIntent)
-//        timerStarted = true
-//    }
-//
-//    private fun stopTimer() {
-//        stopService(serviceIntent)
-//        timerStarted = false
-//    }
-//
-//    private val updateTime: BroadcastReceiver = object : BroadcastReceiver() {
-//        override fun onReceive(context: Context, intent: Intent) {
-//            time = intent.getDoubleExtra(TimeService.TIMER_EXTRA, 0.0)
-//            binding.timer.text = getTimeStringFormatDouble(time)
-//        }
-//    }
-//
-//    private fun getTimeStringFormatDouble(time: Double): String {
-//        val resultInt = time.roundToInt()
-//        val hours = resultInt % 86400 / 3600
-//        val minutes = resultInt % 86400 / 3600 / 60
-//        val seconds = resultInt % 86400 / 3600 % 60
-//
-//        return makeTimeString(hours, minutes, seconds)
-//    }
-//
-//    private fun makeTimeString(hour: Int, min: Int, sec: Int): String =
-//        String.format("%02d:%02d:%02d", hour, min, sec)
-
-
-
 
 }
