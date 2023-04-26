@@ -21,12 +21,22 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/a"
             android:layout_width="290dp"
             android:layout_height="290dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
             app:cardBackgroundColor="@color/black"
-            app:cardCornerRadius="@dimen/button_start_club_cardCornerRadius" />
+            app:cardCornerRadius="@dimen/button_start_club_cardCornerRadius" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/qr_code"
+                android:layout_margin="30dp"
+                />
+        </androidx.cardview.widget.CardView>
 
 
         <androidx.cardview.widget.CardView
@@ -38,6 +48,7 @@
             android:stateListAnimator="@animator/press_button_animation"
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="@dimen/button_start_club_cardCornerRadius">
+
 
             <EditText
                 android:layout_width="wrap_content"
@@ -67,8 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-        app:srcCompat="@drawable/deck" />
+        app:srcCompat="@drawable/deck_1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

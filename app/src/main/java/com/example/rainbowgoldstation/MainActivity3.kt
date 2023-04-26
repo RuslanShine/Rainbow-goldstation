@@ -10,6 +10,7 @@ import android.os.CountDownTimer
 import android.os.Handler
 import android.os.SystemClock
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.Chronometer
 import android.widget.Toast
 import com.example.rainbowgoldstation.databinding.ActivityMain3Binding
@@ -47,8 +48,10 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
+        val myAnimation = AnimationUtils.loadAnimation(this,R.anim.scale)
+        binding.imageViewBack.setOnClickListener(){
+            binding.imageViewBack.startAnimation(myAnimation)
+        }
 
 
     }
